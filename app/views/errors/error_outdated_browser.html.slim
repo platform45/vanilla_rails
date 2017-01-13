@@ -1,0 +1,21 @@
+.row.column
+  h1 Outdated Browser Detected
+
+  p
+    | To get the most out of <strong>#{request.host.gsub('www.', '')}</strong>, we
+      recommend that you upgrade your current browser &mdash; <strong>#{browser_name}</strong>.
+  p Upgrading should only take a few minutes.
+
+  ul.browsers
+    li.browsers__item
+      h2 Google Chrome
+      p = link_to 'Upgrade', 'https://www.google.com/chrome', target: '_blank'
+    li.browsers__item
+      h2 Mozilla Firefox
+      p = link_to 'Upgrade', 'https://www.firefox.com', target: '_blank'
+    li.browsers__item
+      h2 Microsoft Edge
+      p = link_to 'Upgrade', 'https://www.microsoft.com/en-us/windows/microsoft-edge', target: '_blank'
+    li.browsers__item
+      h2 Apple Safari
+      p = link_to 'Upgrade', 'https://www.apple.com/safari', target: '_blank'
