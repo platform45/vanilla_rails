@@ -57,7 +57,7 @@ gem 'uglifier'
 
 # Monitoring
 gem 'honeybadger'
-gem 'newrelic_rpm'
+# gem 'newrelic_rpm'
 
 # Misc
 # gem 'faker'
@@ -102,6 +102,6 @@ end
 # end
 
 group :production, :staging do
-  # gem 'passenger'
+  gem 'passenger'
   gem 'rails_12factor'
 end
